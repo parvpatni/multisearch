@@ -113,8 +113,29 @@ function findSearchEngin(searchEngText){
         return 'https://www.facebook.com/search/top/?q=';
     }
     else if(searchEngText == 'l'){
-                return 'https://www.linkedin.com/search/results/index/?keywords=';
+            return 'https://www.linkedin.com/search/results/index/?keywords=';
+    }
+
+    else if(searchEngText == 'fl'){
+                return 'https://www.flipkart.com/search?q=';
         }
+    else if(searchEngText == 'ya'){
+                return 'https://in.search.yahoo.com/search?p='; 
+        }
+    else if(searchEngText == 'aol'){
+                 return 'https://search.aol.com/aol/search?s_chn=prt_bon&q=';
+        }
+    else if(searchEngText == 'ly'){
+                return 'http://search14.lycos.com/web/?q=';;
+        }
+    else if(searchEngText == 'dm')
+          {  return 'http://www.dailymotion.com/relevance/universal/search/';  }
+    
+    else if(searchEngText == 'in')
+          {  return 'https://www.instagram.com/';  }
+
+    else if(searchEngText == 'tu')
+          {  return 'https://www.tumblr.com/search/';  }
 	return '';
 }
 
@@ -174,6 +195,14 @@ function findSearchName(searchEngText){
         else if(searchEngText == 'ly'){
                 return 'you are in lycos search';
         }
+        else if(searchEngText == 'dm'){
+                return 'you are in dailymotion search';
+        }
+        else if(searchEngText == 'in')
+          {  return 'you are in insta search';  
+            }
+        else if(searchEngText == 'tu')
+          {  return 'you are in tumblr search';  }
         else
             return 'search destination is not available';
         return '';
